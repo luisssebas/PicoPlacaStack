@@ -4,9 +4,9 @@ using PicoPlaca.Mensajeria.MensajeSalida;
 using System;
 using System.Globalization;
 
-namespace PicoPlaca
+namespace PicoPlaca.Core
 {
-    public class PicoPlaca
+    public class PicoPlacaServicio
     {
         public PicoPlacaMS ValidarPicoPlaca(PicoPlacaME mensajeEntrada)
         {
@@ -78,10 +78,16 @@ namespace PicoPlaca
                         break;
                 }
 
+                if (mensajeSalida.Permitido)
+                    Console.WriteLine("Su auto si puede circular el día " + mensajeSalida.Fecha);
+                else
+                    Console.WriteLine("Su auto no puede circular el día " + mensajeSalida.Fecha);
+
                 return mensajeSalida;
             }
             catch (Exception)
             {
+                Console.WriteLine("No se puede calcular con los datos ingresados");
                 return null;
             }
         }

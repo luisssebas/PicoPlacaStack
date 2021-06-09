@@ -46,7 +46,7 @@
     <Compile Include="Mensajeria\Constantes\Dias.cs" />
     <Compile Include="Mensajeria\MensajeEntrada\PicoPlacaME.cs" />
     <Compile Include="Mensajeria\MensajeSalida\PicoPlacaMS.cs" />
-    <Compile Include="Core\PicoPlaca.cs" />
+    <Compile Include="Core\PicoPlacaServicio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

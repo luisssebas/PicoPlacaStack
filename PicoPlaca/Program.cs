@@ -1,7 +1,6 @@
-﻿using PicoPlaca.Mensajeria.MensajeEntrada;
-using PicoPlaca.Mensajeria.MensajeSalida;
+﻿using PicoPlaca.Core;
+using PicoPlaca.Mensajeria.MensajeEntrada;
 using System;
-using System.Threading;
 
 namespace PicoPlaca
 {
@@ -10,7 +9,7 @@ namespace PicoPlaca
         public static void Main(string[] args)
         {
             PicoPlacaME mensajeEntrada = new PicoPlacaME();
-            PicoPlaca picoPlaca = new PicoPlaca();
+            PicoPlacaServicio servicio = new PicoPlacaServicio();
 
             Console.WriteLine("Ingrese su placa (ABC-1234): ");
             mensajeEntrada.Placa = Console.ReadLine();
@@ -21,19 +20,7 @@ namespace PicoPlaca
             Console.WriteLine("Ingrese la hora (HH:mm): ");
             mensajeEntrada.Hora = Console.ReadLine();
 
-            PicoPlacaMS mensajeSalida = picoPlaca.ValidarPicoPlaca(mensajeEntrada);
-
-            if(mensajeSalida != null)
-            {
-                if (mensajeSalida.Permitido)
-                    Console.WriteLine("Su auto si puede circular el día " + mensajeSalida.Fecha);
-                else
-                    Console.WriteLine("Su auto no puede circular el día " + mensajeSalida.Fecha);
-            }
-            else
-                Console.WriteLine("No se puede calcular con los datos ingresados");
-
-            Thread.Sleep(5000);
+            servicio.ValidarPicoPlaca(mensajeEntrada);
         }
     }
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicoPlaca", "PicoPlaca\PicoPlaca.csproj", "{C6120C38-C983-4AD7-9430-4A8D83BB88A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicoPlacaTest", "PicoPlacaTest\PicoPlacaTest.csproj", "{C88DBC09-849D-4174-9FCE-486CF3E44324}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C6120C38-C983-4AD7-9430-4A8D83BB88A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6120C38-C983-4AD7-9430-4A8D83BB88A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6120C38-C983-4AD7-9430-4A8D83BB88A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C88DBC09-849D-4174-9FCE-486CF3E44324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C88DBC09-849D-4174-9FCE-486CF3E44324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C88DBC09-849D-4174-9FCE-486CF3E44324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C88DBC09-849D-4174-9FCE-486CF3E44324}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
